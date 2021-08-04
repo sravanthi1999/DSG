@@ -1,5 +1,7 @@
 import React from "react";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
+import "./note.css";
 
 const CreateNote = () => {
   return (
@@ -7,8 +9,15 @@ const CreateNote = () => {
       <div className="main_note">
         <form>
           <input type="text" placeholder="Title" />
-          <textarea rows="" column="" placeholder="write a note..."></textarea>
-          <SendOutlinedIcon />
+          <textarea
+            rows=""
+            column=""
+            placeholder="write a note..."
+            autoComplete="off"
+          ></textarea>
+          <Button className="submit">
+            <AddIcon className="plus" />
+          </Button>
         </form>
       </div>
     </>
